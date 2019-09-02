@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: example
+
+tracing:
+  jaeger:
+    enabled: true
+    sampler:
+      type: const
+      param: 1
+    reporter:
+      flush-interval: 2000
+      max-queue-size: 200
