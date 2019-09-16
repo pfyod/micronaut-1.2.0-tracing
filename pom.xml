@@ -4,7 +4,7 @@
     <artifactId>example</artifactId>
     <version>0.1</version>
     <properties>
-        <micronaut.version>1.2.0</micronaut.version>
+        <micronaut.version>1.2.2</micronaut.version>
         <!--micronaut.version>1.2.1.BUILD-SNAPSHOT</micronaut.version-->
         <!--micronaut.version>1.1.4</micronaut.version-->
         <jdk.version>1.8</jdk.version>
@@ -121,6 +121,12 @@
             <artifactId>cxf-integration-tracing-opentracing</artifactId>
             <version>${cxf.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>1.2-groovy-2.5</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
